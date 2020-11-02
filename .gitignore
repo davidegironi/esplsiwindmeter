@@ -2,3 +2,7 @@
 .vscode
 
 _bank
+
+data/
+
+*.code-workspace
