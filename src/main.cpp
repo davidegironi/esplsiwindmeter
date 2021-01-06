@@ -64,7 +64,9 @@ String getLastdata() {
   char numberc[20];
   sprintf(numberc, "Wind speed: <b>%0.2f m/s</b>", lastdatawindlsi);
   ret = ret + numberc;
+#if SERIAL_ENABLED == 1
   Serial.println(ret);
+#endif
 
   return ret;
 }
